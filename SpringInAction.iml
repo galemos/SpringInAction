@@ -1,30 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
-    <facet type="web" name="Web">
-      <configuration>
-        <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        </descriptors>
-        <webroots>
-          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
-        </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
-          <root url="file://$MODULE_DIR$/src/main/resources" />
-        </sourceRoots>
-      </configuration>
-    </facet>
     <facet type="Spring" name="Spring">
       <configuration>
-        <fileset id="fileset" name="Knight" removed="false">
+        <fileset id="fileset" name="Chapter1" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/knights.xml</file>
           <file>file://$MODULE_DIR$/src/main/java/com/springinaction/knights/config/KnightConfig.java</file>
         </fileset>
-        <fileset id="fileset2" name="Soundsystem" removed="false">
+        <fileset id="fileset2" name="Chapter2" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/soundsystems.xml</file>
           <file>file://$MODULE_DIR$/src/main/java/com/springinaction/soundsystem/CDPlayerConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/soundsystem.xml</file>
+          <file>file://$MODULE_DIR$/src/main/com/springinaction/chapter2/java/soundsystem/config/CDConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/com/springinaction/chapter2/java/soundsystem/config/SoundSystemConfig.java</file>
         </fileset>
+        <fileset id="fileset3" name="Chapter3" removed="false">
+          <file>file://$MODULE_DIR$/src/main/com/springinaction/chapter3/java/datasource/dev.java</file>
+          <file>file://$MODULE_DIR$/src/main/com/springinaction/chapter3/java/datasource/qa.java</file>
+          <file>file://$MODULE_DIR$/src/main/com/springinaction/chapter3/java/datasource/production.java</file>
+          <file>file://$MODULE_DIR$/src/com/springinaction/chapter3/java/myapp/DataSourceConfig.java</file>
+        </fileset>
+        <fileset id="fileset4" name="Chapter5" removed="false">
+          <file>file://$MODULE_DIR$/src/com/springinaction/chapter5/main/java/spitrr/config/RootConfig.java</file>
+          <file>file://$MODULE_DIR$/src/com/springinaction/chapter5/main/java/spitrr/config/WebConfig.java</file>
+        </fileset>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="context.xml" url="file://$MODULE_DIR$/META-INF/context.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/web" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+          <root url="file://$MODULE_DIR$/src/com/springinaction/chapter1/resources" />
+          <root url="file://$MODULE_DIR$/src/com/springinaction/chapter1/java" />
+          <root url="file://$MODULE_DIR$/src/com/springinaction/chapter2/java" />
+          <root url="file://$MODULE_DIR$/src/com/springinaction/chapter2/resources" />
+          <root url="file://$MODULE_DIR$/src/com/springinaction/chapter3/java" />
+          <root url="file://$MODULE_DIR$/src/com/springinaction/chapter3/resources" />
+          <root url="file://$MODULE_DIR$/src/com/springinaction/chapter5/main/java" />
+          <root url="file://$MODULE_DIR$/src/com/springinaction/chapter5/main/resources" />
+        </sourceRoots>
       </configuration>
     </facet>
   </component>
@@ -33,8 +53,20 @@
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/springinaction/chapter1/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/springinaction/chapter1/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/springinaction/chapter1/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/springinaction/chapter2/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/springinaction/chapter2/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/springinaction/chapter2/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/springinaction/chapter3/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/springinaction/chapter3/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/springinaction/chapter3/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/springinaction/chapter5/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/springinaction/chapter5/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/springinaction/chapter5/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/springinaction/chapter5/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -55,6 +87,10 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:4.3.14.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:4.3.14.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Maven: commons-dbcp:commons-dbcp:1.4" level="project" />
+    <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.5.4" level="project" />
   </component>
 </module>
