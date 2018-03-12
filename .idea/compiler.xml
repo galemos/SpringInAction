@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringInAction" />
+        <module name="spring5webapp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SpringInAction" target="1.8" />
+      <module name="spring5webapp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
